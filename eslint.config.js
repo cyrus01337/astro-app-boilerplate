@@ -1,19 +1,11 @@
-import js from "@eslint/js";
+import javascript from "@eslint/js";
 import astro from "eslint-plugin-astro";
 import typescript from "typescript-eslint";
 
-export default [
-    js.configs.recommended,
-    ...typescript.configs.recommendedTypeChecked,
-    ...typescript.configs.stylisticTypeChecked,
-    {
-        languageOptions: {
-            parserOptions: {
-                project: true,
-                tsconfigRootDir: import.meta.dirname,
-            },
-        },
-    },
+export default typescript.config(
+    javascript.configs.recommended,
+    ...typescript.configs.recommended,
+    ...typescript.configs.stylistic,
     ...astro.configs.recommended,
     {
         ignores: ["node_modules/", ".astro/"],
@@ -31,4 +23,4 @@ export default [
             "no-control-regex": "off",
         },
     },
-];
+);
