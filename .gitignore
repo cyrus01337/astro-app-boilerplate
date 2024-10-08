@@ -131,3 +131,7 @@ dist
 
 # ignore Astro artifacts
 .astro
+
+# ignore Linux local file trash
+.Trash-*
+
