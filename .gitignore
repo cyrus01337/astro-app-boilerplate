@@ -129,9 +129,9 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# ignore Astro artifacts
+# Astro artifacts
 .astro
 
-# ignore Linux local file trash
+# Neovim artifacts
 .Trash-*
 
