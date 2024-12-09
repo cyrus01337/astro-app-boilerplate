@@ -135,3 +135,5 @@ dist
 # Neovim artifacts
 .Trash-*
 
+# Dolphin artifacts
+.directory
