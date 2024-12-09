@@ -3,7 +3,7 @@
         "baseUrl": ".",
         "noEmit": true,
         "paths": {
-            "@/*": ["src/*"]
+            "~/*": ["src/*"]
         }
     },
     "extends": "astro/tsconfigs/strict"
